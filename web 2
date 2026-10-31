@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: yellow;
+            border-bottom: 2px solid yellow;
+        }
+
+        /* Profile */
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        /* Sections */
+        section {
+            padding: 25px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            animation: slideUp 1.5s;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Projects */
+        .project {
+            background-color: #e8f4fc;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        /* Resume Button */
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: darkblue;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Profile -->
+    <header id="home">
+        <h1>Hello, I am Your Name</h1>
+        <h3>Student | Web Developer | Programmer</h3>
+        <p>Welcome to my personal portfolio website!</p>
+    </header>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <p>10th Class - ABC School</p>
+        <p>Intermediate - XYZ College</p>
+        <p>Degree - ABC University</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>C Programming</span>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Reading Books</li>
+            <li>Listening to Music</li>
+            <li>Playing Games</li>
+            <li>Learning New Technologies</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>A website to display my personal information and skills.</p>
+        </div>
+
+        <div class="project">
+            <h3>College Information Website</h3>
+            <p>A website that provides college information and admissions details.</p>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Participated in Coding Competitions.</li>
+            <li>Completed Python Programming Course.</li>
+            <li>Participated in College Events.</li>
+        </ul>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>Click below to view or download my resume.</p>
+        <a href="resume.pdf" class="btn" download>
+            Download Resume
+        </a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: yourname@gmail.com</p>
+        <p>Phone: 9876543210</p>
+        <p>Location: Hyderabad, India</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Personal Website</p>
+        <p>Thank You for Visiting!</p>
+    </footer>
+
+</body>
+</html>
